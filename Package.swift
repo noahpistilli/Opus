@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .target(
             name: "Opus",
-            dependencies: ["ConfigureCoder"]
+            dependencies: ["ConfigureCoder", .product(name: "COPUS", package: "copus")]
         ),
         .target(name: "ConfigureCoder")
     ]
